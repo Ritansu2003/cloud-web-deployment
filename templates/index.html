@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>IT Infrastructure Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">IT</div>
+          <div>
+            <h2>InfraWatch</h2>
+            <p>Infrastructure Portal</p>
+          </div>
+        </div>
+
+        <p class="menu-heading">WORKSPACE</p>
+
+        <nav>
+          <a href="/" class="nav-link active"> <span>▦</span> Dashboard </a>
+          <a href="#services" class="nav-link"> <span>◈</span> Services </a>
+          <a href="#environment" class="nav-link">
+            <span>⚙</span> Environment
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <span class="status-dot"></span>
+          Local demonstration
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">INFRASTRUCTURE / OVERVIEW</p>
+            <h1>IT Infrastructure Dashboard</h1>
+            <p class="subtitle">
+              Monitor your application environment at a glance.
+            </p>
+          </div>
+
+          <div class="profile">RK</div>
+        </header>
+
+        <section class="welcome">
+          <div>
+            <p class="eyebrow light">SYSTEM OVERVIEW</p>
+            <h2>Your infrastructure, in one place.</h2>
+            <p>
+              A centralized view of application components and deployment
+              technologies.
+            </p>
+          </div>
+          <div class="welcome-symbol">⌘</div>
+        </section>
+
+        <section id="services">
+          <div class="section-heading">
+            <div>
+              <h2>Service Overview</h2>
+              <p>Example service statuses</p>
+            </div>
+            <span class="demo-label">DEMO DATA</span>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="card-top">
+                <span class="service-icon blue">APP</span>
+                <span class="status-badge online">
+                  <span class="status-dot"></span> Online
+                </span>
+              </div>
+              <h3>Application Server</h3>
+              <p>Flask web application</p>
+              <div class="card-footer">
+                <span>Component</span>
+                <strong>Web</strong>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="card-top">
+                <span class="service-icon purple">DB</span>
+                <span class="status-badge online">
+                  <span class="status-dot"></span> Online
+                </span>
+              </div>
+              <h3>Database Service</h3>
+              <p>Database component placeholder</p>
+              <div class="card-footer">
+                <span>Component</span>
+                <strong>Data</strong>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="card-top">
+                <span class="service-icon green">API</span>
+                <span class="status-badge online">
+                  <span class="status-dot"></span> Online
+                </span>
+              </div>
+              <h3>API Service</h3>
+              <p>Service component placeholder</p>
+              <div class="card-footer">
+                <span>Component</span>
+                <strong>API</strong>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="environment" class="environment">
+          <div class="section-heading">
+            <div>
+              <h2>Deployment Environment</h2>
+              <p>Technologies used in this project</p>
+            </div>
+          </div>
+
+          <div class="environment-list">
+            <div class="environment-row">
+              <span class="env-icon">Py</span>
+              <div class="env-details">
+                <strong>Python + Flask</strong>
+                <p>Backend application framework</p>
+              </div>
+              <span class="env-value">Application</span>
+            </div>
+
+            <div class="environment-row">
+              <span class="env-icon">Do</span>
+              <div class="env-details">
+                <strong>Docker</strong>
+                <p>Application containerization</p>
+              </div>
+              <span class="env-value">Planned</span>
+            </div>
+
+            <div class="environment-row">
+              <span class="env-icon">AWS</span>
+              <div class="env-details">
+                <strong>Amazon Web Services</strong>
+                <p>Cloud deployment platform</p>
+              </div>
+              <span class="env-value">Planned</span>
+            </div>
+
+            <div class="environment-row">
+              <span class="env-icon">Ub</span>
+              <div class="env-details">
+                <strong>Ubuntu Linux</strong>
+                <p>Target server operating system</p>
+              </div>
+              <span class="env-value">Planned</span>
+            </div>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          InfraWatch · Learning project · Built with Flask
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
